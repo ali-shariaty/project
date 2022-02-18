@@ -29,6 +29,10 @@ public interface IceCream {
     }
 
     interface Variant extends Food.Variant{
+        /**
+         *
+         * @return BaseFlavor
+         */
         String getBaseFlavor();
     }
 }
