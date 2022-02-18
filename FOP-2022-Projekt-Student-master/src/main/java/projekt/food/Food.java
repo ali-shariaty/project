@@ -225,5 +225,6 @@ public interface Food {
          * @return An instance of {@link Food} based on the values from this variant and configured by the provided extras
          */
         F create(List<? extends Extra<? super C>> extras);
+
     }
 }
