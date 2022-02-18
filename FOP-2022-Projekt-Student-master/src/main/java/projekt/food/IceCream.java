@@ -27,4 +27,8 @@ public interface IceCream {
          */
         UnaryOperator<String> getFlavorMutator();
     }
+
+    interface Variant extends Food.Variant{
+        String getBaseFlavor();
+    }
 }
