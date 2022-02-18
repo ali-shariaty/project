@@ -26,6 +26,9 @@ repositories {
 
 dependencies {
     implementation("org.jetbrains:annotations:23.0.0")
+    implementation("org.linkedopenactors.code:loa-distanceCalculator:0.0.6")
+    implementation("org.linkedopenactors.code:loa-algorithm-distanceCalculator:0.0.9")
+    implementation("org.linkedopenactors.code:distanceCalculator:0.0.1")
     // JUnit only available in "test" source set (./src/test)
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")
 }
