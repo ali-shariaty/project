@@ -23,6 +23,10 @@ public interface Pasta extends Saucable{
         DoubleUnaryOperator getThicknessMutator();
     }
     interface Variant extends Saucable.Variant{
+        /**
+         *
+         * @return BaseThickness
+         */
         double getBaseThickness();
     }
 }
