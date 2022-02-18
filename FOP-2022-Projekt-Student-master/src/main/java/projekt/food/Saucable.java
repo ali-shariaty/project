@@ -23,4 +23,8 @@ public interface Saucable extends Food{
          */
         UnaryOperator<String> getSauceOperator();
     }
+
+    interface Variant extends Food.Variant{
+        String getBaseSauce();
+    }
 }
