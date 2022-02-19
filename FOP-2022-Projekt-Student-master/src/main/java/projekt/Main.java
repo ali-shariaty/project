@@ -5,5 +5,7 @@ public class Main {
         System.out.println("Hello World!");
         System.out.println("first example for GitHub");
         System.out.println("ich teste das jetzt auch mal");
+        System.out.println("ich mache mal mit lol");
+
     }
 }
