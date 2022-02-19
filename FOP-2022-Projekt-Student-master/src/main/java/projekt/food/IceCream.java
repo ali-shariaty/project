@@ -2,7 +2,8 @@ package projekt.food;
 
 import java.util.function.UnaryOperator;
 
-public interface IceCream {
+public interface IceCream extends Food
+{
     /**
      * The definition of this method describes the flavor of the ice cream
      * @return the flavor of the actual IceCream type
