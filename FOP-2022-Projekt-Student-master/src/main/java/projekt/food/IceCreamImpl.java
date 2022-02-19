@@ -1,6 +1,7 @@
 package projekt.food;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.UnaryOperator;
 
@@ -18,6 +19,26 @@ public class IceCreamImpl implements IceCream{
     @Override
     public String getFlavor() {
         return flavor;
+    }
+
+    @Override
+    public BigDecimal getPrice() {
+        return null;
+    }
+
+    @Override
+    public double getWeight() {
+        return 0;
+    }
+
+    @Override
+    public Food.Variant<?, ?> getFoodVariant() {
+        return null;
+    }
+
+    @Override
+    public List<? extends Extra<?>> getExtras() {
+        return null;
     }
 
     private static class Config implements Food.Config{

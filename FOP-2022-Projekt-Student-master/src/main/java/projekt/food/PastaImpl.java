@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.UnaryOperator;
 
-public class PastaImpl implements  Pasta{
+public class PastaImpl implements Pasta{
 
     private final BigDecimal price;
     private final Food.Variant foodVariant;
