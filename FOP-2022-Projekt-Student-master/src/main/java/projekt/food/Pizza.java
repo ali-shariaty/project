@@ -3,6 +3,7 @@ package projekt.food;
 import java.util.function.DoubleUnaryOperator;
 
 public interface Pizza extends Saucable{
+    Pizza.Variant Variant = null;
     /**
      * The definition of this method describes the diameter of the pizza
      * @return the diameter in cm of the actual Pizza type

@@ -3,6 +3,8 @@ package projekt.food;
 import java.util.function.DoubleUnaryOperator;
 
 public interface Pasta extends Saucable{
+    Pasta.Variant Variant = null;
+
     /**
      * The definition of this method describes the thickness of the pasta
      * @return the thickness in cm of the actual Pasta type

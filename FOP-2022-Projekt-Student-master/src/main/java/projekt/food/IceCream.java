@@ -4,6 +4,8 @@ import java.util.function.UnaryOperator;
 
 public interface IceCream extends Food
 {
+    IceCream.Variant Variant = null;
+
     /**
      * The definition of this method describes the flavor of the ice cream
      * @return the flavor of the actual IceCream type
