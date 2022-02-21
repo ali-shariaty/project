@@ -24,6 +24,7 @@ public interface Pasta extends Saucable{
          */
         DoubleUnaryOperator getThicknessMutator();
     }
+    //interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
     interface Variant extends Saucable.Variant{
         /**
          *
