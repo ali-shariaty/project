@@ -11,11 +11,13 @@ public class PastaImpl implements Pasta{
 
     private final BigDecimal price;
     private final Food.Variant foodVariant;
+    //List<? extends Extra<?>>
     private final List extras;
     private final double thickness;
     private final String sauce;
     public static final FoodBuilder<Pasta, Config, Variant> BUILDER = null;// FIXME: 2/20/2022
 
+    //List<? extends Extra<?>>
     /**
      * create an instance of PastaImpl with the following attributes
      * @param price price of the pasta
