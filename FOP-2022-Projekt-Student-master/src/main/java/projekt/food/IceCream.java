@@ -30,7 +30,7 @@ public interface IceCream extends Food
          */
         UnaryOperator<String> getFlavorMutator();
     }
-
+    //interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
     interface Variant extends Food.Variant{
         /**
          *
