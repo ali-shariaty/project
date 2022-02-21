@@ -23,6 +23,7 @@ public interface Pizza extends Saucable{
          */
         DoubleUnaryOperator getDiameterMutator();
     }
+    //interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
     interface Variant extends Saucable.Variant{
         /**
          *
