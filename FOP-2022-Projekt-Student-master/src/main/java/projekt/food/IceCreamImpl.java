@@ -12,6 +12,7 @@ public class IceCreamImpl implements IceCream{
     private final String flavor;
     public static final FoodBuilder<IceCream, Config, Variant> BUILDER = null;
 
+    //price, weight, foodvariant, extras?
     /**
      * creates an instance of IceCreamImpl with the following attribute
      * @param flavor flavor of icecream
