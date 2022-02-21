@@ -44,7 +44,7 @@ public class IceCreamImpl implements IceCream{
     public List<? extends Extra<?>> getExtras() {
         return null;
     }
-
+    //public Constructor in einer privaten Klasse??
     private static class Config implements Food.Config{
 
         private final UnaryOperator<BigDecimal> priceMutator;
