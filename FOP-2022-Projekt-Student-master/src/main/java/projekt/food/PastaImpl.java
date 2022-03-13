@@ -11,8 +11,7 @@ public class PastaImpl implements Pasta{
 
     private final BigDecimal price;
     private final Food.Variant foodVariant;
-    //List<? extends Extra<?>>
-    private final List extras;
+    private final List<? extends Extra<?>> extras;
     private final double thickness;
     private final String sauce;
     public static final FoodBuilder<Pasta, Config, Variant> BUILDER = null;// FIXME: 2/20/2022
@@ -23,10 +22,10 @@ public class PastaImpl implements Pasta{
      * @param price price of the pasta
      * @param foodVariant the foodvariant
      * @param extras the extras of the pasta
-     * @param thickness the thicknes of the pasta
+     * @param thickness the thickness of the pasta
      * @param sauce the sauce for the pasta
      */
-    public PastaImpl(BigDecimal price, Food.Variant foodVariant, List extras, double thickness, String sauce){
+    public PastaImpl(BigDecimal price, Food.Variant foodVariant, List<? extends Extra<?>> extras, double thickness, String sauce){
         this.price = price;
         this.foodVariant = foodVariant;
         this.extras = extras;
@@ -41,7 +40,7 @@ public class PastaImpl implements Pasta{
 
     @Override
     public double getWeight() {
-        return getWeight();
+        return 0;
     }
 
     @Override
