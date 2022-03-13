@@ -27,7 +27,7 @@ public interface Pizza extends Saucable{
     //interface Variant extends Saucable.Variant
     {
         /**
-         *
+         * getter-method for BaseDiameter
          * @return BaseDiameter
          */
         double getBaseDiameter();
