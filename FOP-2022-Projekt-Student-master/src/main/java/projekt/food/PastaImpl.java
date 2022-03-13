@@ -11,7 +11,8 @@ public class PastaImpl implements Pasta{
 
     private final BigDecimal price;
     private final Food.Variant foodVariant;
-    private final List<? extends Extra<?>> extras;
+    //List<? extends Extra<?>>
+    private final List extras;
     private final double thickness;
     private final String sauce;
     public static final FoodBuilder<Pasta, Config, Variant> BUILDER = null;// FIXME: 2/20/2022
@@ -25,7 +26,7 @@ public class PastaImpl implements Pasta{
      * @param thickness the thicknes of the pasta
      * @param sauce the sauce for the pasta
      */
-    public PastaImpl(BigDecimal price, Food.Variant foodVariant, List<? extends Extra<?>> extras, double thickness, String sauce){
+    public PastaImpl(BigDecimal price, Food.Variant foodVariant, List extras, double thickness, String sauce){
         this.price = price;
         this.foodVariant = foodVariant;
         this.extras = extras;
