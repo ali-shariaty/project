@@ -10,7 +10,7 @@ import java.util.function.UnaryOperator;
 public class PastaImpl implements Pasta{
 
     private final BigDecimal price;
-    private final Food.Variant foodVariant;
+    private final Food.Variant<?, ?> foodVariant;
     private final List<? extends Extra<?>> extras;
     private final double thickness;
     private final String sauce;
@@ -25,7 +25,7 @@ public class PastaImpl implements Pasta{
      * @param thickness the thickness of the pasta
      * @param sauce the sauce for the pasta
      */
-    public PastaImpl(BigDecimal price, Food.Variant foodVariant, List<? extends Extra<?>> extras, double thickness, String sauce){
+    public PastaImpl(BigDecimal price, Food.Variant<?, ?> foodVariant, List<? extends Extra<?>> extras, double thickness, String sauce){
         this.price = price;
         this.foodVariant = foodVariant;
         this.extras = extras;
@@ -207,7 +207,7 @@ public class PastaImpl implements Pasta{
          */
         @Override
         public Food.Config createEmptyConfig() {
-            return null;
+            return new PastaImpl.Config(null,null,null);
         }
 
         /**
