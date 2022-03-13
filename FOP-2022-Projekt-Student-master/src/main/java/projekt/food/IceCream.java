@@ -33,7 +33,7 @@ public interface IceCream extends Food
     //interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
     interface Variant extends Food.Variant{
         /**
-         *
+         * Getter-method for BaseFlavor
          * @return BaseFlavor
          */
         String getBaseFlavor();

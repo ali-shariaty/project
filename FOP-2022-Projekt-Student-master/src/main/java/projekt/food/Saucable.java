@@ -23,9 +23,13 @@ public interface Saucable extends Food{
          */
         UnaryOperator<String> getSauceOperator();
     }
-    //interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
-    interface Variant extends Food.Variant{
-        //No comment here!!
+    interface Variant <F extends Food, C extends Config> extends Food.Variant<F, C>
+    //interface Variant extends Food.Variant
+    {
+        /**
+         * getter-method for baseSauce
+         * @return BaseSauce
+         */
         String getBaseSauce();
     }
 }
