@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.UnaryOperator;
 
-public class PizzaImpl implements Pizza{
+class PizzaImpl implements Pizza{
 
     private final BigDecimal price;
     private final double weight;

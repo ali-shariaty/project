@@ -7,19 +7,11 @@ import java.util.Map;
 
 public final class FoodTypes {
 
-//Das ist ein static initializer, frag nicht habs auch noch nie gesehen
-//wird automatisch immer als erstes ausgeführt, sogar vor dem Konstruktor.
-    static {
-    /**
-     * hier müssen die in H2.13 aufgestellten Speisekarten mit FoodVariants
-     * den entsprechenden FoodType-Konstanten hinzugefügt werden. Also PIZZA, PASTA und ICE_CREAM
-     */
-    System.out.println("Bitte implementiere mich bro, siehe 2.10");
-}
 
     private static List<Extra> pizzaList =new ArrayList<>();
     private static List<Extra> pastaList =new ArrayList<>();
     private static List<Extra> ice_creamList =new ArrayList<>();
+
 
     /**
      * Selbstgeschriebene Methode fügt die kompatiblen Extras der entsprechenden Liste hinzu.
@@ -80,5 +72,14 @@ public final class FoodTypes {
      * privater Konstruktor für FoodTypes. Es sollen keine Objekte erstellt werden können dieser Klasse.
      */
     private FoodTypes(){}
+
+
+//Das ist ein static initializer, frag nicht habs auch noch nie gesehen
+//wird automatisch immer als erstes ausgeführt, sogar vor dem Konstruktor.
+    static {
+        IceCream.Variant.create(ice_creamList);
+        Pizza.Variant.create(pizzaList);
+        Pasta.Variant.create(pastaList);
+}
 
 }

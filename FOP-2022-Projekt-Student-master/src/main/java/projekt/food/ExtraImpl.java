@@ -41,13 +41,12 @@ public class ExtraImpl<C extends Food.Config> implements Extra{
     }
 
     /**
-     * Wendet die Modifikationen des Extras an
+     * Wendet die Modifikationen des Extras an :)
      * @param config vom formalen Typ Food.Config, die Konfigurationen die angewendet werden sollen
      */
     @Override
     public void apply(Food.Config config) {
-        //price und weight müssen hier configurated werden
-       // configMutator.accept(config); oder so etwas in der Art
+        configMutator.accept((C) config);
     }
 
 }

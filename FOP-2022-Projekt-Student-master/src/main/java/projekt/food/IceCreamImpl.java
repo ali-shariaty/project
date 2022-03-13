@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.UnaryOperator;
 
-public class IceCreamImpl implements IceCream{
+class IceCreamImpl implements IceCream{
 
     private final String flavor;
     public static final FoodBuilder<IceCream, Config, Variant> BUILDER = null;

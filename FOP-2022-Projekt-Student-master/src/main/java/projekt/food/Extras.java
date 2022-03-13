@@ -15,7 +15,7 @@ public final class Extras {
     //hier werden die einzelnen Extra-Wünsche berechnet
 
     private static final UnaryOperator<BigDecimal> priceHam = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(1.0);
+        BigDecimal addThis = new BigDecimal("1.0");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightHam = operand -> operand + 0.1;
@@ -24,7 +24,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceOlives = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(0.8);
+        BigDecimal addThis = new BigDecimal("0.8");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightOlives = operand -> operand + 0.05;
@@ -33,7 +33,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceThick = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(4.0);
+        BigDecimal addThis = new BigDecimal("4.0");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightThick = operand -> operand * 2;
@@ -44,7 +44,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceSpicy = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(0.5);
+        BigDecimal addThis = new BigDecimal("0.5");
         return bigDecimal.add(addThis);
     };
     private static final UnaryOperator<String> sauceSpicy = s -> "Spicy " + s;
@@ -53,7 +53,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceExtraSauce = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(1.25);
+        BigDecimal addThis = new BigDecimal("1.25");
         return bigDecimal.add(addThis);
     };
     private static final UnaryOperator<String> sauceExtraSauce = s -> "Extra " + s;
@@ -64,7 +64,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceNoSauce = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(-1.0);
+        BigDecimal addThis = BigDecimal.valueOf(-1.0);
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightNoSauce = operand -> operand - 0.1;
@@ -75,7 +75,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceRainbowSprinkles = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(0.5);
+        BigDecimal addThis = new BigDecimal("0.5");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightRainbowSprinkles = operand -> operand + 0.03;
@@ -84,7 +84,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceExtraScoop = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(3.0);
+        BigDecimal addThis = new BigDecimal("3.0");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightExtraScoop = operand -> operand + 0.1;
@@ -95,7 +95,7 @@ public final class Extras {
 
     //Eigene Extras
     private static final UnaryOperator<BigDecimal> priceMicky = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(5.0);
+        BigDecimal addThis = new BigDecimal("5.0");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightMicky = operand -> operand + 0.5;
@@ -104,7 +104,7 @@ public final class Extras {
     };
 
     private static final UnaryOperator<BigDecimal> priceUnicornPoopy = bigDecimal -> {
-        BigDecimal addThis = new BigDecimal(10);
+        BigDecimal addThis = new BigDecimal("10");
         return bigDecimal.add(addThis);
     };
     private static final DoubleUnaryOperator weightUnicornPoopy = operand -> operand + 1;
